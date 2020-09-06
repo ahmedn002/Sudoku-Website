@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*******************************************************
+********************NAVIGATION BAR**********************
+********************************************************/
+
+li, a, button {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #EBEBEB;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    background: #24252A;
+}
+
+.logo {
+    cursor: pointer;
+    background: none;
+    width: 300px;
+}
+
+.nav_links {
+    list-style: none;
+    padding: 0px 20px
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: rgba(115, 241, 250, 1)
+}
+
+button {
+    padding: 9px 25px;
+    background: #73F1FA;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #24252A;
+}
+
+button:hover {
+    background: rgba(115, 241, 250, 0.8)
+}
+
+button:focus {
+    outline: none;
+}
+
+/*******************************************************
+***********************MAIN PAGE************************
+********************************************************/
+
+body {
+    background: #C2C2C2;
+}
+
+.page {
+    width: 80%;
+    margin: auto;
+    background-color: #EBEBEB;
+    height: 89vh;
+    display: flex;
+}
+
+/*******************************************************
+*********************SUDOKU BOARD***********************
+********************************************************/
+
+table, tr, td {
+    border-collapse: collapse;
+}
+
+table {
+  margin: 90px 90px;
+}
+
+td {
+  height: 70px;
+  width: 70px;
+  border: 1px solid;
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 25px;
+}
+
+td:first-child {
+  border-left: solid;
+}
+
+td:nth-child(3n) {
+  border-right: solid ;
+}
+
+tr:first-child {
+  border-top: solid;
+}
+
+tr:nth-child(3n) td {
+  border-bottom: solid ;
+}
+
+/*******************************************************
+***********************CONTROLS*************************
+********************************************************/
+
+.page button {
+    width: 150px;
+    height: 70px;
+}
+
+#buttons {
+    margin-top: 350px
+}
